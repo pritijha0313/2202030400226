@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            height: 50%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+        }
+
+        /* page 2 */
+
+        .container {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .profile-name {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .profile-info p {
+        margin: 5px 0;
+    }
+
+    /* page 3 */
+    header {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 22rem;
+    background-color: #00A884;
+}
+.header--content {
+    display: flex;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    transform: translateY(3rem);
+}
+.img--box {
+    margin-right: 1.3rem;
+    img {
+        width: 4rem;
+    }
+}
+.text--box {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.header--attachment {
+    background: white;
+    max-width: 100rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    transform: translateY(-12rem);
+    border-radius: .5rem;
+    box-shadow: 0 1.6rem 1.2rem rgba(0, 0, 0, .3);
+
+    @media only screen and (max-width: 56.25em) {
+        max-width: 60rem;
+    }
+}
+.ha--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+    border: .15rem solid rgb(219, 219, 219);
+    padding: 1.8rem 3.5rem ;
+
+    @media only screen and (max-width: 56.25rem) {
+        max-width: 45rem;
+        padding: 1rem 1.5rem ;
+        }
+}
+.top--img {
+    img {
+        width: 9rem;
+        @media only screen and (max-width: 56.25rem) { 
+            margin-right: .5rem;
+        }
+    }
+}
+.top--text {
+    p {
+        font-size: 1.8rem;
+        @media only screen and (max-width: 56.25rem) { 
+            font-size: 1.6rem;
+        }
+    }
+    span {
+        display: block;
+        font-size: 1.4rem;
+        @media only screen and (max-width: 56.25rem) { 
+            font-size: 1rem;
+        }
+    }
+}
+.top--button {
+    background-color: #008069;
+    height: 4rem;
+    line-height: 4rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+
+    @media only screen and (max-width: 56.25rem) { 
+        font-size: 1.2rem;
+    }
+}
+.ha--middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    max-width: 85rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: 56.25rem) {
+            flex-direction: column;
+            align-items: center;
+    }
+}
+.how {
+    p {
+        font-size: 2.8rem;
+        font-weight: 100;
+    }
+
+    ol {
+        display: block;
+        margin-top: 5rem;
+
+        li {
+            font-size: 1.8rem;
+            font-weight: 100;
+            line-height: 2.5;
+
+            img {
+                width: 2.5rem;
+                transform: translateY(.4rem);
+            }
+        }
+    }
+}
+
+.qrCode {
+    img {
+        width: 26rem;
+    }
+
+    @media only screen and (max-width: 56.25rem) { 
+        margin-top: 3rem;
+    }
+}
+
+.line {
+    max-width: 85rem;
+    margin: 0 auto;
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.linkNoCon {
+    max-width: 85rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color:  #008069;
+    }
+
+    @media only screen and (max-width: 56.25rem) {  
+        max-width: 20rem;
+    }
+}
+
+.ha--bottom {
+    background-color: #F9F9FA;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+
+.tutorial--video {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media only screen and (max-width: 56.25rem) {
+        width: 48rem;
+        }
+    }
+}
+/* page 4 */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.setting-item {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch label {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch label:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + label {
+    background-color: #4CAF50;
+}
+
+.toggle-switch input:checked + label:before {
+    transform: translateX(26px);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* page 5 */
+.container {
+	width: 500px;
+	margin: auto;
+}
+.chat {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background: #f1f0e8;
+}
+.chat-header {
+	display: flex;
+	cursor: pointer;
+}
+.profile {
+	width: 100%;
+	background: #036055;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0px 10px;
+	position: relative;
+}
+.profile .pp {
+	width: 50px;
+	display: inline-block;
+	border-radius: 50%;
+	margin-left: 32px;
+}
+.profile .arrow {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 19px;
+	cursor: pointer;
+}
+.profile h2 {
+	display: inline-block;
+	line-height: 60px;
+	vertical-align: bottom;
+	color: #fff;
+	font-size: 20px;
+}
+.profile span {
+	color: #ccc;
+	position: absolute;
+	top: 42px;
+	left: 100px;
+	font-size: 14px;
+}
+.right .icon {
+	display: inline-block;
+	width: 25px;
+	margin-left: 10px;
+}
+.profile .left {
+	flex: 1;
+}
+
+.chat-box {
+	background: url('../img/bg.jpeg');
+	background-attachment: fixed;
+	padding-left: 20px;
+	overflow-y: scroll;
+	flex: 1;
+}
+.chat-box .img_chat {
+	width: 280px;
+}
+
+.chat-r {
+	display: flex;
+}
+.chat-r .sp {
+	flex: 1;
+}
+
+.chat-l {
+	display: flex;
+}
+.chat-l .sp {
+	flex: 1;
+}
+
+.chat-box .mess {
+	max-width: 300px;
+	background: #F7FCF6;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px 0px;
+	cursor: pointer;
+}
+.chat-box .mess p {
+	word-break: break-all;
+	font-size: 18px;
+}
+.chat-box .mess-r {
+    background: #E2FFC7;
+}
+.chat-box .emoji {
+	width: 20px;
+}
+.chat-box .check {
+	float: right;
+}
+.chat-box .check img {
+	width: 20px;
+}
+.chat-box .check span {
+	color: #888;
+	font-size: 12px;
+	font-weight: 700px;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+	background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.chat-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 60px;
+	position: relative;
+	cursor: pointer;
+}
+.chat-footer textarea {
+	display: block;
+	flex: 1;
+	width: 100%;
+	height: 50px;
+	border-radius: 60px;
+	margin: 5px;
+	padding: 10px;
+	outline: none;
+	font-size: 19px;
+	padding-left: 40px;
+	padding-right: 90px;
+	border: 2px solid #ccc;
+	color: #555;
+	resize: none;
+}
+.chat-footer .mic {
+	display: block;
+	width: 55px;
+	height: 55px;
+	margin-right: 20px;
+}
+
+.chat-footer .emo{
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 10px;
+	top: 12px;
+}
+.chat-footer .icons {
+	position: absolute;
+	right: 100px;
+	top: 10px;
+}
+.chat-footer .icons img{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.container {
+      max-width: 600px;
+      height: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background-color: #128C7E;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .message {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .message:last-child {
+      border-bottom: none;
+    }
+
+    .message .sender {
+      font-weight: bold;
+    }
+
+    .message .time {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .message .text {
+      margin-top: 5px;
+    }
+
+    .input-container {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .input-container input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .input-container button {
+      padding: 10px 20px;
+      background-color: #128C7E;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background-color: #128C7E;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .status {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .status:last-child {
+      border-bottom: none;
+    }
+
+    .status .user {
+      font-weight: bold;
+    }
+
+    .status .time {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .status .text {
+      margin-top: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="download.jpg" alt="img">
+        </div>
+        
+    </div>
+ <!-- page 2 -->
+ <div class="container">
+    <img src="download.jpg" alt="Profile Picture" class="profile-img">
+    <h2 class="profile-name">John Doe</h2>
+    <div class="profile-info">
+        <p>Status: Available</p>
+        <p>Last Seen: Just now</p>
+        <p>Phone: +1234567890</p>
+    </div>
+</div>
+<!-- page 3 -->
+<header>
+    <div class="header--content">
+      <div class="img--box">
+        <img src="img/whatsAPPLogo.png" alt="" />
+      </div>
+      <div class="text--box">
+        <p>Whatsapp Web</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="header--attachment">
+    <div class="ha--top">
+     
+      <div class="top--text">
+        <p>
+          Download WhatsApp for Windows
+          <span
+            >Get calling sharing and a faster experience with the new Windows
+            app.</span
+          >
+        </p>
+      </div>
+      <div class="top--button">Get the app</div>
+    </div>
+
+    <div class="ha--middle">
+      <div class="how">
+        <p>Use WhatsApp on your computer</p>
+
+        <ol>
+          <li>Open WhatsApp on your phone</li>
+          <li>
+            Tap <strong>Menu</strong> <img src="img/option.png" alt="" /> or
+            <strong>Settings</strong>
+            <img src="img/settings.png" alt="" /> and select
+            <strong>Linked Devices</strong>
+          </li>
+          <li>Tap on <strong>Link a device</strong></li>
+          <li>Point your phone to this screen to capture the QR code</li>
+        </ol>
+      </div>
+
+      <div class="qrCode">
+        <img src="img/QRCode.png" alt="" />
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="linkNoCon"><a href="/">Link with phone number</a></div>
+
+    <div class="ha--bottom">
+      <div class="tutorial--text">
+        <p>Tutorial <span>Need help to get started?</span></p>
+      </div>
+
+     
+    </div>
+  </div>
+  <!-- page4 -->
+  <div class="container">
+    <h1>WhatsApp Settings</h1>
+    <div class="setting-item">
+        <h2>Notification</h2>
+        <div class="toggle-switch">
+            <input type="checkbox" id="notification-switch">
+            <label for="notification-switch"></label>
+        </div>
+    </div>
+    <div class="setting-item">
+        <h2>Privacy</h2>
+        <div class="toggle-switch">
+            <input type="checkbox" id="privacy-switch">
+            <label for="privacy-switch"></label>
+        </div>
+    </div>
+    <div class="setting-item">
+        <h2>Account</h2>
+        <button>Edit Profile</button>
+        <button>Change Number</button>
+    </div>
+</div>
+<!-- page 5 -->
+<div class="container">
+    <div class="chat">
+        <div class="chat-header">
+            <div class="profile">
+                <div class="left">
+                    <img src="img/arrow.png" class="arrow">
+                    <img src="img/pp.png" class="pp">
+                    <h2>Elias</h2>
+                    <span>online</span>
+                </div>
+                <div class="right">
+                    <img src="img/video.png" class="icon">
+                    <img src="img/phone.png" class="icon">
+                    <img src="img/more.png" class="icon">
+                </div>
+            </div>
+        </div>
+        <div class="chat-box">
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <p><img src="img/emoji-1.png" class="emoji">
+                        Hi, Elias
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-l">
+                <div class="mess">
+                    <p>
+                        Oh! hi <img src="img/emoji-2.png" class="emoji">
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                    </div>
+                </div>
+                <div class="sp"></div>
+            </div>
+
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <p>
+                       How are you doing?
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-l">
+                <div class="mess">
+                    <p>I'm doing alright. How about you?</p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                    </div>
+                </div>
+                <div class="sp"></div>
+            </div>
+
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <p>
+                       Not too bad. The weather is great isn't it?
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-l">
+                <div class="mess">
+                    <p>
+                        Yes. It's absolutely beautiful today.
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                    </div>
+                </div>
+                <div class="sp"></div>
+            </div>
+
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <img src="img/post2.jpg" class="img_chat">
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <p>I wish it was like this more frequently.</p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-l">
+                <div class="mess">
+                    <p>
+                       Me too. <img src="img/heart.png"  class="emoji">
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                    </div>
+                </div>
+                <div class="sp"></div>
+            </div>
+            <div class="chat-r">
+                <div class="sp"></div>
+                <div class="mess mess-r">
+                    <p>
+                       So where are you going now?
+                    </p>
+                    <div class="check">
+                        <span>4:00 PM</span>
+                        <img src="img/check-1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <img src="img/emo.png" class="emo">
+            <textarea placeholder="Type a message"></textarea>
+            <div class="icons">
+                <img src="img/attach file.png">
+                <img src="img/camera.png">
+            </div>
+            <img src="img/mic.png" class="mic">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="header">
+      <h2>WhatsApp</h2>
+    </div>
+    <div class="messages">
+      <div class="message">
+        <div class="sender">John Doe</div>
+        <div class="time">12:30 PM</div>
+        <div class="text">Hey, how's it going?</div>
+      </div>
+      <div class="message">
+        <div class="sender">Jane Smith</div>
+        <div class="time">12:35 PM</div>
+        <div class="text">It's going great! How about you?</div>
+      </div>
+      <!-- More messages can be added here -->
+    </div>
+    <div class="input-container">
+      <input type="text" placeholder="Type your message...">
+      <button>Send</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h2>WhatsApp Status</h2>
+    </div>
+    <div class="statuses">
+      <div class="status">
+        <div class="user">John Doe</div>
+        <div class="time">12:30 PM</div>
+        <div class="text">Feeling happy today! 😊</div>
+      </div>
+      <div class="status">
+        <div class="user">Jane Smith</div>
+        <div class="time">12:35 PM</div>
+        <div class="text">Exploring new places 🌍</div>
+      </div>
+      <!-- More statuses can be added here -->
+    </div>
+  </div>
+
+</body>
+</html>
