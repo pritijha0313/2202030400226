@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5", 
+                        secondary: "#1e293b", 
+                        accent: "#9333ea", 
+                        dark: "#0f172a", 
+                    },
+                    animation: {
+                        fadeIn: "fadeIn 1.5s ease-in-out",
+                        slideIn: "slideIn 0.8s ease-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: "0" },
+                            "100%": { opacity: "1" }
+                        },
+                        slideIn: {
+                            "0%": { transform: "translateX(-100%)", opacity: "0" },
+                            "100%": { transform: "translateX(0)", opacity: "1" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-dark text-white  flex">
+
+    <div class="bg-secondary w-64 min-h-screen p-6 hidden md:block">
+        <h2 class="text-xl font-bold mb-6 text-white">Dashboard</h2>
+        <ul class="space-y-4">
+            <li><a href="index.html" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a></li>
+            <li><a href="users.html" class="block py-2 px-4 rounded bg-primary">Users</a></li>
+            <li><a href="analytics.html" class="block py-2 px-4 rounded hover:bg-gray-700">Analytics</a></li>
+            <li><a href="settings.html" class="block py-2 px-4 rounded hover:bg-gray-700">Settings</a></li>
+            <li><a href="profile.html" class="block py-2 px-4 rounded hover:bg-gray-700">Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="flex-1 p-6">
+        <h1 class="text-3xl font-bold">Users</h1>
+        <div class="bg-secondary p-6 rounded-lg shadow-lg mt-6">
+            <h3 class="text-xl font-bold">User List</h3>
+            <table class="w-full mt-4">
+                <thead>
+                    <tr class="text-left border-b">
+                        <th class="py-2">Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-2">John Doe</td>
+                        <td>john@example.com</td>
+                        <td><span class="text-green-500">Active</span></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2">Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td><span class="text-yellow-500">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td class="py-2">Alice Brown</td>
+                        <td>alice@example.com</td>
+                        <td><span class="text-red-500">Inactive</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

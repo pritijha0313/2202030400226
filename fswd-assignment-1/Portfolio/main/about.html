@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5",  
+                        secondary: "#1e293b", 
+                        accent: "#9333ea",  
+                        dark: "#0f172a", 
+                    },
+                    animation: {
+                        fadeIn: "fadeIn 2s ease-in-out",
+                        slideUp: "slideUp 1.5s ease-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: "0" },
+                            "100%": { opacity: "1" }
+                        },
+                        slideUp: {
+                            "0%": { transform: "translateY(50px)", opacity: "0" },
+                            "100%": { transform: "translateY(0)", opacity: "1" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-dark text-white">
+
+    <nav class="bg-primary text-white fixed top-0 w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <h1 class="text-2xl font-bold">My Portfolio</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-gray-200">Home</a>
+                    <a href="about.html" class="hover:text-gray-200">About</a>
+                    <a href="service.html" class="hover:text-gray-200">Blog</a>
+                    <a href="contact.html" class="hover:text-gray-200">Contact</a>
+                </div>
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex flex-col bg-primary w-full shadow-md">
+            <a href="index.html" class="block py-2 px-4 text-white hover:bg-accent">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-white hover:bg-accent">About</a>
+            <a href="service.html" class="block py-2 px-4 text-white hover:bg-accent">Blog</a>
+            <a href="contact.html" class="block py-2 px-4 text-white hover:bg-accent">Contact</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col items-center justify-center text-center bg-secondary text-white">
+        <h1 class="text-4xl font-bold">About Me</h1>
+        <p class="text-gray-300 max-w-xl mt-4">
+            I am a passionate full-stack developer, creating seamless and interactive web experiences.
+        </p>
+    </section>
+
+    <section class="py-20 bg-dark">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <img src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" alt="About Me" class="rounded-lg shadow-lg transition duration-500 transform hover:scale-105">
+            <div class="animate-slideUp">
+                <h2 class="text-3xl font-semibold mb-4 text-primary">LET’S INTRODUCE ABOUT MYSELF</h2>
+                <p class="text-gray-300">
+                    I'm a web developer specializing in front-end and back-end technologies. My goal is to build high-performing applications with great user experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-secondary">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-accent">Skills</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-dark p-6 rounded-lg transform hover:scale-105 transition duration-500">
+                    <h3 class="text-xl font-semibold">HTML</h3>
+                </div>
+                <div class="bg-dark p-6 rounded-lg transform hover:scale-105 transition duration-500">
+                    <h3 class="text-xl font-semibold">CSS & Tailwind</h3>
+                </div>
+                <div class="bg-dark p-6 rounded-lg transform hover:scale-105 transition duration-500">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                </div>
+                <div class="bg-dark p-6 rounded-lg transform hover:scale-105 transition duration-500">
+                    <h3 class="text-xl font-semibold">React.js</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+        <p class="text-lg mb-6">Interested in working on a project together? Let's talk.</p>
+        <a href="contect.html" class="bg-white text-primary py-3 px-6 rounded-lg font-semibold hover:bg-gray-300 transition duration-500">Contact Me</a>
+    </section>
+
+    <footer class="bg-gray-900 text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="text-2xl font-bold">MyWebsite</h2>
+                    <p class="mt-2 text-gray-400">Building a better web, one site at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Follow Us</h3>
+                    <div class="mt-2 flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12.1c0-5.5-4.5-10-10-10S2 6.6 2 12.1c0 4.8 3.4 8.7 7.8 9.6v-6.8H7.1V12h2.7V9.7c0-2.6 1.6-4.1 3.9-4.1 1.1 0 2.2.2 2.2.2v2.4H15c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v6.8c4.4-.9 7.8-4.8 7.8-9.6z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.6 3H4.4C3.6 3 3 3.6 3 4.4v15.1c0 .8.6 1.4 1.4 1.4h8V14.8h-2.7v-2.9h2.7v-2c0-2.7 1.6-4.2 4-4.2 1.1 0 2.2.2 2.2.2v2.4H18c-1.2 0-1.6.7-1.6 1.5v1.9h2.8l-.4 2.9h-2.4v6.8h4.8c.8 0 1.4-.6 1.4-1.4V4.4c0-.8-.6-1.4-1.4-1.4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.4 4.8c-.8.4-1.7.7-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.8.9-2.8 1.1-.9-.9-2.2-1.4-3.5-1.4-2.7 0-4.8 2.2-4.8 4.8 0 .4 0 .8.1 1.2-4-.2-7.6-2.1-10-4.9-.4.7-.6 1.5-.6 2.3 0 1.6.8 3 2.1 3.8-.7 0-1.5-.2-2.1-.6v.1c0 2.2 1.6 4 3.7 4.4-.4.1-.8.2-1.2.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.3-1.7 1.3-3.9 2-6.2 2-.4 0-.8 0-1.1-.1 2.2 1.4 4.8 2.1 7.5 2.1 9 0 13.9-7.5 13.9-13.9v-.6c1-.7 1.8-1.5 2.5-2.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-700">
+            <div class="text-center text-gray-400">
+                © 2025 MyWebsite. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

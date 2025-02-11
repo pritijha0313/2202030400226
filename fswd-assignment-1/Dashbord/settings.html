@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5", 
+                        secondary: "#1e293b", 
+                        accent: "#9333ea",
+                        dark: "#0f172a",
+                    },
+                    animation: {
+                        fadeIn: "fadeIn 1.5s ease-in-out",
+                        slideIn: "slideIn 0.8s ease-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: "0" },
+                            "100%": { opacity: "1" }
+                        },
+                        slideIn: {
+                            "0%": { transform: "translateX(-100%)", opacity: "0" },
+                            "100%": { transform: "translateX(0)", opacity: "1" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-dark text-white flex">
+    <div class="bg-secondary w-64 min-h-screen p-6 hidden md:block">
+        <h2 class="text-xl font-bold mb-6 text-white">Dashboard</h2>
+        <ul class="space-y-4">
+            <li><a href="index.html" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a></li>
+            <li><a href="users.html" class="block py-2 px-4 rounded hover:bg-gray-700">Users</a></li>
+            <li><a href="analytics.html" class="block py-2 px-4 rounded hover:bg-gray-700">Analytics</a></li>
+            <li><a href="settings.html" class="block py-2 px-4 rounded bg-primary">Settings</a></li>
+            <li><a href="profile.html" class="block py-2 px-4 rounded hover:bg-gray-700">Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="flex-1 p-6">
+        <h1 class="text-3xl font-bold">Settings</h1>
+        <div class="bg-secondary p-6 rounded-lg shadow-lg mt-6">
+            <h3 class="text-xl font-bold">Account Settings</h3>
+            <p class="text-gray-400 mt-2">Enable or disable notifications</p>
+            <label class="inline-flex items-center mt-2">
+                <input type="checkbox" class="form-checkbox text-accent">
+                <span class="ml-2">Receive Email Notifications</span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
